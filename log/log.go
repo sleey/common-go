@@ -312,6 +312,11 @@ func SetOutput(output io.Writer) {
 	origLogger.SetOutput(output)
 }
 
+// SetNoLock set no locking when appending new logs
+func SetNoLock() {
+	origLogger.SetNoLock()
+}
+
 type errorLogWriter struct{}
 
 func (errorLogWriter) Write(b []byte) (int, error) {
