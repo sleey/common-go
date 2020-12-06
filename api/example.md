@@ -26,7 +26,6 @@ func main() {
 		_, err := req.Do()
 		if err != nil {
 			log.Println(err)
-			continue
 		}
 	}
 }
